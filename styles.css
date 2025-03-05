@@ -1,0 +1,61 @@
+body {
+    display: flex;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #343a40;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#page-content {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+}
+
+#projects .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    #page-content {
+        margin-left: 0;
+    }
+}
