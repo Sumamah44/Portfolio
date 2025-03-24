@@ -21,6 +21,25 @@ body {
     border-radius: 50%;
 }
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-toggle {
+    cursor: pointer;
+}
+
 .sidebar .nav-link {
     font-size: 1.1rem;
     padding: 10px;
